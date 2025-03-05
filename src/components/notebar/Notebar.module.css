@@ -9,7 +9,6 @@
     font-size: 14px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .note {
         font-size: 13px;

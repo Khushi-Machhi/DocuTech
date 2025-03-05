@@ -4,6 +4,7 @@
     text-align: center;
 }
 .feedback-title {
+    font-size: clamp(1.4rem, 2.2vw, 5.6rem);
     font-weight: bolder;
     margin: 0;
 }  
@@ -29,6 +30,7 @@
     max-width: 130px;
 }
 .user-feedback-title {
+    font-size: clamp(1.4rem, 2.2vw, 5.6rem);
     margin: 15px 0;
     font-weight: bold;
 }
@@ -103,7 +105,6 @@
 } 
 
 
-/* Responsive Fixes */
 @media(max-width: 1230px) {
     .nav-button{
         height: 60px;

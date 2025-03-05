@@ -50,13 +50,12 @@ export default function UserFeedback() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(3);
 
-  // Responsive function to update itemsPerPage based on screen width
   useEffect(() => {
     const handleResize = () => {
       setItemsPerPage(window.innerWidth <= 1024 ? 1 : 3);
     };
 
-    handleResize(); // Check initially
+    handleResize(); 
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
@@ -83,7 +82,7 @@ export default function UserFeedback() {
         signed with <span className="highlight">DocuTech</span>
       </h1>
 
-      {/* Partner Logos */}
+    
       <div className="partners">
         <img src={l1} alt="UC San Diego" />
         <img src={l2} alt="VIRMA Global" />
@@ -93,7 +92,7 @@ export default function UserFeedback() {
         <img src={l6} alt="B2B Rocket" />
       </div>
 
-      {/* User Testimonials */}
+
       <h1 className="user-feedback-title">What our users say</h1>
       <div className="feedback-carousel">
         <button className="nav-button left" onClick={prevReview}>

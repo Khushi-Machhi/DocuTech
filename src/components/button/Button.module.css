@@ -20,7 +20,7 @@
     cursor: pointer;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .btn {
         height: 28px;

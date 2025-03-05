@@ -22,7 +22,7 @@
     margin-top: 10%;
 }
 
-/* Responsive Design */
+
 @media (max-width: 1024px) {
     .img {
         height: 45px;
