@@ -1,0 +1,25 @@
+.note {
+    top: 0;
+    width: 100%;
+    color: white;
+    background-color: rgba(37, 74, 118, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .note {
+        font-size: 13px;
+        padding: 3px 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .note {
+        font-size: 12px;
+        padding: 2px 4px;
+    }
+}

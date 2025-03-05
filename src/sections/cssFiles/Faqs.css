@@ -1,0 +1,132 @@
+.s6 {
+    min-height: 101vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.s6 h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.faq-container {
+    width: 100%;
+    max-width: 1150px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 0;
+}
+
+.faq-item {
+    color: white;
+    margin: 20px 0;
+}
+
+.faq-question {
+    cursor: pointer;
+    background-color: rgb(37,74,118);
+    padding: 1.4rem;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 100;
+    word-break: break-word;
+}
+
+.faq-question:hover {
+    background-color: rgb(30, 60, 100);
+}
+
+.quefont {
+    font-weight: bold;
+    flex: 1;
+}
+
+.faq-icon {
+    font-size: 2.5rem;
+    margin-left: 10px;
+}
+
+.faq-answer {
+    background-color: white;
+    color: rgb(37,74,118);
+    padding: 3rem;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    box-shadow: rgba(215, 54, 188, 0.3) 8px 8px 10px;
+    font-size: 0.9rem;
+    margin-top: -6.1rem;
+    padding-top: 8rem;
+    border: 0.1px solid rgba(215, 54, 188, 0.1);
+    word-break: break-word;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .faq-question {
+        font-size: 1.1rem;
+        padding: 1.5rem;
+    }
+    .faq-icon {
+        font-size: 1.8rem;
+    }
+    .faq-answer {
+        font-size: 0.9rem;
+        padding: 2.5rem;
+        margin-top: 0;
+        padding-top: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .s6 h1 {
+        font-size: 1.8rem;
+    }
+    .faq-question {
+        font-size: 1rem;
+        padding: 1.2rem;
+    }
+    .faq-icon {
+        font-size: 1.5rem;
+    }
+    .faq-answer {
+        font-size: 0.85rem;
+        padding: 2rem;
+        margin-top: 0;
+        padding-top: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .s6 h1 {
+        font-size: 1.5rem;
+    }
+    .faq-container{
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+    .faq-question {
+        font-size: 0.9rem;
+        padding: 1rem;
+        flex-wrap: wrap;
+    }
+    .faq-icon {
+        font-size: 2rem;
+    }
+    .faq-answer {
+        font-size: 0.8rem;
+        padding: 1.5rem;
+        margin-top: 0;
+        padding-top: 1.5rem;
+    }
+}

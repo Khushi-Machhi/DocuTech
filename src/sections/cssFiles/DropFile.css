@@ -1,0 +1,218 @@
+.s2 {
+    display: flex;
+    justify-content: center;  
+    align-items: center;    
+    text-align: center;
+    height: 120vh;      
+    padding: 20px;
+    padding-top: 0;
+}
+
+.s2 > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* Centering content */
+    justify-content: center;  /* Centering content */
+    gap: 20px;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 10px;
+    width: 70%;
+    height: 90%;
+    margin: auto;  /* Centers the container */
+    margin-top: 0;
+}
+
+
+.upperdiv{
+    width: 100%;
+    height: auto; /* Allow it to expand as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures proper wrapping on small screens */
+    gap: 10px; /* Adds spacing between elements */
+}
+
+.drop-area {
+    width: 40%;
+    height: 50%;
+    border: 2px solid black;
+    border-radius: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 1.5%;
+    padding-left: 2%;
+}
+
+.file-input {
+    display: none;
+}
+.upload-button,
+.generate-button {
+    cursor: pointer;
+    font-size: 1.1vw;
+    background: rgb(37,74,118);
+    border: 1px solid rgb(37,74,118);
+    color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+} 
+.upload-button:hover,
+.generate-button:hover{
+    border: 1px solid white;
+}
+.upload-button {
+    height: 70%;
+    width: 40%;
+    margin-right: 2.3%;
+}  
+.generate-button {
+    margin-left: 1.5%;
+    height: 40%;
+    width: 18%;
+}
+.upload-button>img{
+    height: 60%;
+}
+.generate-button>img{
+    height: 40%;
+}
+
+.preview-area {
+    width: 65%;
+    height: 90%;
+    background-color: white;
+    border: 2px solid rgb(37,74,118);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* Centering preview image */
+    overflow: hidden;
+    box-shadow: rgba(215, 54, 188, 0.4) 4px 7px 10px;
+}
+
+.preview-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .s2 > .container {
+        width: 85%; 
+    }
+    .drop-area {
+        width: 50%;
+    }
+    .generate-button {
+        font-size: 0;
+        width: auto;
+        padding: 0 2%;
+        padding-left: 4%;
+    }
+}
+
+@media (max-width: 768px) {
+    .s2 > .container {
+        width: 90%;
+        padding-top: 0;
+        margin-top: 0;
+        justify-content: flex-start;
+    }
+    .drop-area {
+        width: 50%;
+        height: auto;
+        padding: 10px;
+    }
+    /* .upload-button, */
+    .generate-button {
+        height: 70%;
+        width: 20%;
+    }
+    .upload-button{
+        font-size: 1rem;
+        padding: 2%;
+    }
+    .upload-button img{
+        display: none;
+    }
+    .preview-area {
+        width: 80%;
+        height: 60%;
+    }
+}
+
+@media (max-width: 620px) {
+    .s2{
+        height: 80vh;
+        padding-top: 1%;
+        padding-bottom: 0;
+    }
+    .s2 > .container{
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .preview-area {
+        width: 80%;
+        height: 60%;
+    }
+    .upperdiv {   
+        flex-direction: column;
+        align-items: center; 
+        height: 30%;
+    }
+    .drop-area {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+    .upload-button,
+    .generate-button {
+        text-align: center;
+        justify-content: center;
+    }
+    .upload-button{
+        width: 40%;
+    }
+    .generate-button {
+        width: 70%;
+        height: 30%;
+        font-size: 16px;
+    }
+}
+@media (max-width: 351px){
+    .upperdiv{
+        margin-bottom: 10%;
+        flex-direction: row;
+        align-items: center;
+    }
+    .drop-area{
+        height: 30%;
+        font-size: 0.5rem;
+    }
+    .upload-button {
+        font-size: 3vw;
+    }
+    .generate-button {
+        font-size: 0;
+        height: 50%;
+        width: 60%;
+    }
+    .preview-area{
+        height: 80%;
+    }
+    .s2{
+        height: 40vh;
+    }
+}
+

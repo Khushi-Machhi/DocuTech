@@ -1,0 +1,16 @@
+
+.section {
+    height: 100vh;
+}
+.s2,.s4{
+    height: 140vh;
+    background:
+    radial-gradient(circle at left, rgba(37,74,118,0.5) 10%,rgba(37,74,118,0.4) 20%, rgba(37,74,118,0.3) 30%, transparent 50%), 
+    radial-gradient(circle at right, rgba(37,74,118,0.5) 10%, rgba(37,74,118,0.4) 20%, rgba(37,74,118,0.3) 30%, transparent 50%), 
+    white;
+    background-size: 50.01% 100%, 50.01% 100%; 
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left, right, center;
+}
+
+

@@ -1,0 +1,101 @@
+
+/* Pricing */
+.s5{
+    height: 100vh;
+}
+.s5 h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5vw;
+    margin-bottom: 1rem;
+}
+.toggle-container {
+    display: flex;
+    width: 20%;
+    height: 50px;
+    margin-bottom: 3%;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.toggle-container button {
+    flex: 1;
+    height: 100%;
+    padding: 15px 20px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 30px;
+    font-size: 1.2vw;
+}
+.toggle-container button.active {
+    background: rgb(37, 74, 118);
+    color: white;
+    font-weight: bold;
+}
+.pricing-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0% 11.2%;
+    height: 70%;
+}
+  
+
+@media screen and (max-width: 1024px) {
+    .s5{
+        height: 150vh;
+    }
+    .pricing-cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+        padding: 0;
+    }
+    .s5 h1 {
+        font-size: 3vw;
+    }
+
+    .toggle-container {
+        width: 30%;
+    }
+
+    .toggle-container button {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .s5 h1 {
+        font-size: 4vw;
+    }
+
+    .toggle-container {
+        width: 40%;
+    }
+
+    .toggle-container button {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .s5 h1 {
+        font-size: 5vw;
+    }
+
+    .toggle-container {
+        width: 80%;
+        height: 45px;
+    }
+
+    .toggle-container button {
+        font-size: 3vw;
+        padding: 10px;
+    }
+}
