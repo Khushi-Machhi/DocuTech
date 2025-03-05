@@ -11,6 +11,6 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/DocuTech/'  // 👈 Add this line
+  base: '/DocuTech/' 
 });
 
