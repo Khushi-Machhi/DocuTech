@@ -49,6 +49,7 @@
     align-items: center;
     gap:5%;
     height: 90%;
+    padding: 2%;
 }
   
 .feedback-card {
@@ -103,7 +104,6 @@
     right: 0;
     transform: translate(-160%);
 } 
-
 
 @media(max-width: 1230px) {
     .nav-button{

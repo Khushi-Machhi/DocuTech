@@ -28,8 +28,8 @@ const WhyUs = () => {
       <div className="maindiv">
         <div className="leftdiv">
           {
-            listItems.map((li)=>(
-              <div className="answer">
+            listItems.map((li) => (
+              <div key={li.idx} className="answer">
                   <h5>{li.ans}</h5>
               </div>
             ))

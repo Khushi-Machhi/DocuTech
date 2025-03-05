@@ -105,7 +105,8 @@
     }
     .logodiv img, .logodiv h2{
         width: 10%;
-        margin-bottom: 0;
+        height: 20%;
+        margin-bottom: 2%;
     }
     .logodiv{
         align-items: end;
@@ -131,6 +132,7 @@
     }
     .logodiv img{
         width: 20%;
+        height: 20%;
     }
     .leftdiv, .rightdiv {
         align-items: center;
@@ -161,6 +163,10 @@
         width: 100%;
         justify-content: center;
         gap: 10px;
+    }
+    .leftdiv img{
+        height: 2rem;
+        width: 2rem;
     }
 
     .icons {
